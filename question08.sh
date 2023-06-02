@@ -1,3 +1,4 @@
 mkdir dir2
-mv ./*.py dir2
-git commit -am 'question08 update'
+mv ./*.txt dir2
+git add .
+git commit -m 'question08 update'
