@@ -1,4 +1,4 @@
-git clone https://github.com/ian-knight-uofa/git-practice-02
+cd git-practice-02
 
 git branch branch2
 git branch branch3
