@@ -16,7 +16,7 @@
     - with open() as xx: no need to close the file.
 - Read file
     - read() **default** or **-1** read the whole file; Positive integer read string with the length.
-    - readline() **default** or **-1** read the whole line; Positive integer read string with the length.
+    - readline() **default** or **-1** read the first line; Positive integer read string with the length.
     - readlines() **default** or **-1** read the whole file line by line; If the number of bytes returned exceed the hint number, no more lines will be returned.
 - Change the current file position
     - seek() a number representing the position to set the current file stream position.
@@ -35,11 +35,12 @@
 
 ### **JSON**
 - reading JSON data (deserialisation)
-    - json.loads() loads a string in JSON format into dict. After that you can operate them as a dict.
+    - json.loads(jstr) loads a string in JSON format into dict. After that you can operate them as a dict.
 - reading JSON file
-    - open() 
+    - open(encoding='utf-8-sig') 
     - read() (same above, built-in python func, read the JSON format into string)
     - json.loads() the function is same above, change string into dict.
+    - json.load() if the file is .json file, don't need read firstly instead of json.load() directly.
 - writing JSON data (serialisation)
     - open() with 'w' or 'a'
     - json.dump(data, file) put data into file(JSON file)
@@ -51,3 +52,7 @@
 - modifying the DOM
     - setAttribute() modifying DOM tree
     - open('newfile', 'w') write the modified DOM in the new file.
+
+### **Binary files**
+- open the binary files
+    - open('path', 'rb') 'rb' mode stands for 'read binary'
