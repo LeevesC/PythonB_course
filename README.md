@@ -21,7 +21,8 @@
 - Change the current file position
     - seek() a number representing the position to set the current file stream position.
 - Writing to a file
-    - write() depends on the way of opening the file, 'w' overwrite any existing content, 'a' append to the end of the file.
+    - write(str) depends on the way of opening the file, 'w' overwrite any existing content, 'a' append to the end of the file.
+    - writelines([str, str, str]) Note the type of arguments between write() and writelines().
 
 ### **csv**
 - open csv file (same above)
@@ -30,8 +31,8 @@
     - csv.DictReader() return a list of each row as dict.
 - writing to csv file
     - csv.writer() initializing for writing data into csv.
-    - .writerows() write multiple rows
-    - .writerow() write single row
+    - .writerows() write multiple rows, the argument like this [[],[],[]...].
+    - .writerow() write single row, the argument like this [...].
 
 ### **JSON**
 - reading JSON data (deserialisation)
