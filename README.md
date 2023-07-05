@@ -33,6 +33,7 @@
     - csv.writer() initializing for writing data into csv.
     - .writerows() write multiple rows, the argument like this [[],[],[]...].
     - .writerow() write single row, the argument like this [...].
+    - .DictWriter(filename, header) create an object which knows how to convert dictionary entries into csv rows. (Using this, you should have headers firstly, then main data)
 
 ### **JSON**
 - reading JSON data (deserialisation)
@@ -56,4 +57,26 @@
 
 ### **Binary files**
 - open the binary files
-    - open('path', 'rb') 'rb' mode stands for 'read binary'
+    - open('path', 'rb') 'rb' mode stands for 'read binary'  
+---
+## B3_Topic7 (Big O Notation)
+### Major types of complexities
+* O(1) - Constant Time  
+* O(n) - Linear Time  
+> The runtime depends on the input size.
+* O(log n) - Logarithmic Time  
+> Log time is similar to linear thim complexity, except that the runtime does not depend on the input size but rather on half the input size. The larger the data set, the more time or space it will require, but the rate of increase slows down as the data set size increases.  
+> **Binary search**
+* O(n log n) - Linearithmic Time  
+>  
+* O($n^2$) - Quadratic Time  
+> When you perform nested iteration, meaning having a loop in loop, the time complexity is quadratic.  
+* O($n^p$) - Polynomial Time  
+> we can generalise quadratic time to any O($n^p$) to cover quadratic($n^2$), cubic($n^3$), quartic($n^4$) etc. functions.  
+* O($k^n) - Exponential Time  
+> O($2^n$) algorithms double with every additional input. If n=2, the algorithms will run four times; if n=3, they run eight times.  
+* O(n!) - Factorial Time  
+> Recursion  
+
+### Recursion 
+
