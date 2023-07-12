@@ -80,3 +80,17 @@
 
 ### Recursion 
 
+---
+## B3_Topic8 (Sorting Algorithms)  
+
+### Bubble Sort  
+> Two nested loops; each outer loop put the current max value to the end of the list; each inner loop iterating unordered elements untill to the first ordered element.
+
+### Selection Sort  
+> Two nested loops; One swap for each pass(outer loop); Looking for the largest(minimum) value in each pass and move to the end.
+
+### Quicksort  
+> recursion  
+
+### Insertion Sort  
+> 
