@@ -83,14 +83,14 @@
 ---
 ## B3_Topic8 (Sorting Algorithms)  
 
-### Bubble Sort  
-> Two nested loops; each outer loop put the current max value to the end of the list; each inner loop iterating unordered elements untill to the first ordered element.
+### Bubble Sort (Key word: Neighbors)  
+> Nested loops; each outer loop put the current max value to the end of the list; each inner loop iterating unordered elements untill to the first ordered element.
 
-### Selection Sort  
-> Two nested loops; One swap for each pass(outer loop); Looking for the largest(minimum) value in each pass and move to the end.
+### Selection Sort (Key word: Max index)
+> Nested loops; One swap for each pass(outer loop); Looking for the largest(minimum) value in each pass and move to the end.
 
-### Quicksort  
-> recursion  
+### Quicksort (Key word: Pivot)
+> Recursion; Get a pivot put all values less than the pivot on the rightside of it, and all values more than the pivot on the other side of it; Repeat steps above until just one value on both sides of a pivot.
 
-### Insertion Sort  
-> 
+### Insertion Sort (Key word: List shift)  
+> Nested loops; Each outer loop get a new unsorted element, each inner loop put the new element into ordered part in correct position.
