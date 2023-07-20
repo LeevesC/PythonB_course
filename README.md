@@ -93,4 +93,17 @@
 > Recursion; Get a pivot put all values less than the pivot on the rightside of it, and all values more than the pivot on the other side of it; Repeat steps above until just one value on both sides of a pivot.
 
 ### Insertion Sort (Key word: List shift)  
-> Nested loops; Each outer loop get a new unsorted element, each inner loop put the new element into ordered part in correct position.
+> Nested loops; Each outer loop get a new unsorted element, each inner loop put the new element into ordered part in correct position.  
+---
+## B3_Topic9 (Searching Algorithms)  
+### Linear Search (Key word: one by one)  
+> Search the target in a list from start to end.  
+
+### Binary Search (Key word: middle)  
+> The thouht is quite identical with quicksort, pivot is the midpoint value. 
+
+### Interpolation Search (Key word: Generalization)  
+> Same with binary search, choose the pivot in an advanced way.  
+
+### Jump Search (Key word: section)  
+> Slice the list into several segments, firstly check the target belongs to which segments, and then comparing the elements one by one in that segment.
