@@ -116,7 +116,7 @@
 > Key word: **level by level**  
 
 ### Dijkstra  
-> Key word: ****  
+> Key word: **priority queue**  
 * Setting the distance from the start node to itself as 0.  
 * Put all vertices into a priority queue. In this case, the node with the shortest distance is alway the first one to be dequeued.  
 * Enters a loop that continues as long as there are nodes in the queue. In each iteration of the loop.  
