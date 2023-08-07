@@ -106,4 +106,21 @@
 > Same with binary search, choose the pivot in an advanced way.  
 
 ### Jump Search (Key word: section)  
-> Slice the list into several segments, firstly check the target belongs to which segments, and then comparing the elements one by one in that segment.
+> Slice the list into several segments, firstly check the target belongs to which segments, and then comparing the elements one by one in that segment.  
+---  
+## B4_Topic11 (Graph Searching)  
+### Depth First Search  
+> Key word: **Backtrack**  
+
+### Breadth First Search  
+> Key word: **level by level**  
+
+### Dijkstra  
+> Key word: ****  
+* Setting the distance from the start node to itself as 0.  
+* Put all vertices into a priority queue. In this case, the node with the shortest distance is alway the first one to be dequeued.  
+* Enters a loop that continues as long as there are nodes in the queue. In each iteration of the loop.  
+    * It dequeues a node with the shortest distance (initially, this will be the start node).
+    * For each of the dequeued node's neighbors, it calculates what the distance would be if it took the path through the dequeued node to this neighbor. if this distance is shorter than the currently recorded shortest distance to the neighbor, it updates the neighbor's shortest distance and sets its predecessor to be the dequeued node.  
+* If a node's shortest distance is updated, it might change its position in the priority queue, so the queue is updated.  
+* This process repeats until all nodes have been visited. The end result is that for each node, we know that shortest distance from the start node to it and which node to go to next to follow the shortest path.  
