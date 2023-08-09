@@ -110,10 +110,13 @@
 ---  
 ## B4_Topic11 (Graph Searching)  
 ### Depth First Search  
-> Key word: **Backtrack**  
+> Key word: **stack,backtrack**  
+Keep it going until no way to go and than back to last intersection go the other way.
+
 
 ### Breadth First Search  
 > Key word: **level by level**  
+Differ from DFS, go through all vertices after an intersection, and then move to next level.
 
 ### Dijkstra  
 > Key word: **priority queue**  
